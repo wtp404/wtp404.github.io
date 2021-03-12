@@ -277,7 +277,7 @@ body, html {
 
 @media screen and (min-width: 350px) and (max-width: 600px) {
     .content__title {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 }
 
@@ -601,6 +601,16 @@ body, html {
     text-align: left;
 }
 
+.card-feature__title {
+    font-size: 1rem;
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    .card-feature__title {
+        font-size: 1.25rem;
+    }
+}
+
 @media screen and (min-width: 900px) {
     .card-feature {
         overflow: hidden;
@@ -729,8 +739,9 @@ body, html {
 .photo-teacher {
     background-image: url("../img/teacher-hero_600.jpg");
     background-position: center center;
-    background-size: 100%;
-    height: 25vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75vw;
     overflow: hidden;
     width: 100%;
 }
@@ -740,12 +751,14 @@ body, html {
     background-color: rgba(0, 0, 0, 0.25);
     color: rgb(255, 255, 255);
     font-family: 'Philosopher', sans-serif;
+    font-size: 1.5rem;
     padding: 0.5em 1em;
 }
 
 @media screen and (min-width: 600px) and (max-width: 900px) {
     .photo-teacher {
         background-image: url("../img/teacher-hero_900.jpg");
+        height: 50vw;
     }
     
     .photo-teacher__caption {
@@ -756,6 +769,7 @@ body, html {
 @media screen and (min-width: 1200px) {
     .photo-teacher {
         background-image: url("../img/teacher-hero.jpg");
+        height: 25vw;
     }
     
 }
