@@ -1,0 +1,39 @@
+a, abbr, address, article, aside, audio,
+b, blockquote, body,
+caption, cite, code,
+dd, del, details, dfn, div, dl, dt,
+em, embed,
+fieldset, figure, footer, form,
+h1, h2, h3, h4, h5, h6, header, html,
+i, iframe, img, input, ins,
+kbd, label, legend, li,
+mark, menu, nav,
+object, ol, p, pre, q,
+samp, section, select, small, span, strong, sub, summary, sup,
+table, tbody, td, textarea, tfoot, th, thead, time, tr,
+ul, var, video {
+    background: transparent;
+    border: 0;
+    box-sizing: border-box;
+    color: inherit;
+    font-size: 100%;
+    font-style: normal;
+	font-weight: 400;
+    letter-spacing: normal;
+    line-height: 130%;
+	margin: 0;
+	padding: 0;
+    text-decoration: none;;
+	vertical-align: baseline;
+	z-index: 0;
+}
+
+img,
+object,
+embed {
+	max-width: 100%;
+}
+
+ul {
+	list-style: none;
+}
