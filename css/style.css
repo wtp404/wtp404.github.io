@@ -593,7 +593,11 @@ body, html {
     background-color: rgb(250, 205, 191);
     background-color: rgba(237, 57, 0, 0.15);
     box-sizing: border-box;
-    padding: 1em; 
+    padding: 0 1em 1em;
+}
+
+.card-feature:first-of-type {
+    padding-top: 1em;
 }
 
 .card-feature__text {
