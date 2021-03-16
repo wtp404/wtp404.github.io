@@ -46,6 +46,7 @@ body, html {
 .menu {
     height: auto;
     overflow: hidden;
+    position: relative;
 }
 
 .menu--hidden {
@@ -70,6 +71,39 @@ body, html {
     padding: 1.25em 1em 1em;
     text-align: left;
     text-transform: uppercase;
+}
+
+.menu__trigger {
+    font-size: 6.5vw;
+    height: 6vw;
+    width: 6vw;
+    padding: 0.7em 0.5em 0.5em;
+    top: 0; right: 0;
+    position: absolute;
+    transition: transform  1s ease;
+}
+
+.menu__trigger--close :nth-child(1) {
+    transform-origin: top left;
+    transform: rotate(45deg) translateX(16.5%) translateY(3%);
+
+}
+
+.menu__trigger--close :nth-child(2) {
+    opacity: 0;
+}
+
+.menu__trigger--close :nth-child(3) {
+    transform-origin: top right;
+    transform: rotate(-45deg) translateX(-16.5%);
+}
+
+@media screen and (min-width: 450px) and (max-width: 1200px) {
+    .menu__trigger {
+        font-size: 1.5rem;
+        height: 30px;
+        width: 30px;
+    }
 }
 
 .menu__link:active, 
@@ -113,14 +147,20 @@ body, html {
 .logo__text {
     border-bottom: none;
     font-family: 'Prata', serif;
-    font-size: 1.25rem;
-    padding: 0.7em 0 0.5em;
+    font-size: 6.5vw;
+    padding: 0.7em 2em 0.5em;
     text-align: center;
 }
 
 
 .logo--small .logo__text {
     font-size: 1rem;
+}
+
+@media screen and (min-width: 450px) and (max-width: 1200px) {
+    .logo__text {
+        font-size: 1.4rem;
+    }
 }
 
 @media screen and (min-width: 1200px) {
