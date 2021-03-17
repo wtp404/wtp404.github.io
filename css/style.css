@@ -828,10 +828,11 @@ body, html {
 
 .photo-teacher {
     background-image: url("../img/teacher-hero_600.jpg");
+    background-image: url("../img/teacher-hero_600.webp");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 75vw;
+    height: 100vw;
     overflow: hidden;
     width: 100%;
 }
@@ -845,9 +846,16 @@ body, html {
     padding: 0.5em 1em;
 }
 
+@media screen and (min-width: 400px) and (max-width: 600px) {
+    .photo-teacher {
+        height: 75vw;
+    }
+}
+
 @media screen and (min-width: 600px) and (max-width: 900px) {
     .photo-teacher {
         background-image: url("../img/teacher-hero_900.jpg");
+        background-image: url("../img/teacher-hero_900.webp");
         height: 50vw;
     }
     
@@ -859,6 +867,7 @@ body, html {
 @media screen and (min-width: 1200px) {
     .photo-teacher {
         background-image: url("../img/teacher-hero.jpg");
+        background-image: url("../img/teacher-hero.webp");
         height: 25vw;
     }
     
