@@ -283,7 +283,7 @@ body {
 }
 
 .about {
-    margin: 1.75rem 1rem;
+    margin: 2rem 1.5rem;
 }
 
 .about-title {
@@ -318,10 +318,6 @@ body {
 }
 
 @media screen and (min-width: 600px) {
-    .about {
-        margin: 1rem 2rem;
-    }
-
     .about-content {
         flex-direction: row;
     }
@@ -342,6 +338,10 @@ body {
 }
 
 @media screen and (min-width: 600px) and (max-width: 900px) {
+    .about {
+        margin: 2rem 2rem 3rem;
+    }
+
     .about-title {
         font-size: 3rem;
     }
@@ -366,6 +366,10 @@ body {
 }
 
 @media screen and (min-width: 900px) and (max-width: 1200px) {
+    .about {
+        margin: 2rem 2rem 3rem;
+    }
+
     .about-title {
         font-size: 4rem;
     }
@@ -377,7 +381,7 @@ body {
 
 @media screen and (min-width: 1800px) {
     .about {
-        margin: 3rem auto;
+        margin: 3rem 0 4rem;
     }
 
     .about-title {
@@ -390,6 +394,10 @@ body {
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1800px) {
+    .about {
+        margin: 2rem 3rem 3rem;
+    }
+
     .about-title {
         font-size: 4rem;
     }
@@ -401,7 +409,6 @@ body {
 
 .advantages {
     background-color: #f5b553;
-    margin: 1.75rem auto;
     padding: 1rem;
 }
 
@@ -462,7 +469,7 @@ body {
     color:#f5b553;
     font-size: 2.5rem;
     font-family: "Segoe Script";
-    margin: 1.75rem 1.5rem;
+    margin: 2rem 1.5rem;
     text-align: center;
 }
 
@@ -476,7 +483,7 @@ body {
 }
 
 .practice-list {
-    margin: 2rem auto;
+    margin: 2rem 1.5rem;
     max-width: 900px;
 }
 
@@ -527,10 +534,6 @@ body {
 }
 
 @media screen and (min-width: 600px) {
-    .practice-list {
-        margin: 2rem;
-    }
-
     .practice-img {
         height: 500px;
     }
@@ -548,6 +551,11 @@ body {
 
     .practice-title {
         font-size: 3rem;
+        margin: 2rem;
+    }
+
+    .practice-list {
+        margin: 2rem 2rem 3rem;
     }
 
     .practice-img-caption {
@@ -556,17 +564,13 @@ body {
 }
 
 @media screen and (min-width: 900px) {
-  .practice-img {
-      background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(img/learning.jpeg);
+    .practice-img {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(img/learning.jpeg);
       background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(img/learning.webp);
-  }
+    }
 
     .practice-title::after {
         height: 3px;
-    }
-
-    .practice-list {
-        margin: 3rem;
     }
 
     .practice-img-caption {
@@ -577,6 +581,11 @@ body {
 @media screen and (min-width: 900px) and (max-width: 1200px) {
     .practice-title {
         font-size: 4rem;
+        margin: 2rem;
+    }
+
+    .practice-list {
+        margin: 2rem 2rem 3rem;
     }
 
     .practice-img-caption {
@@ -585,6 +594,15 @@ body {
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1800px) {
+    .practice-list {
+        margin: 2rem 3rem 3rem;
+    }
+
+    .practice-title {
+        font-size: 4rem;
+        margin: 2rem 3rem;
+    }
+
     .practice-img-caption {
         font-size: 4rem;
     }
@@ -593,6 +611,11 @@ body {
 @media screen and (min-width: 1800px) {
     .practice-title {
         font-size: 4rem;
+        margin: 3rem 0;
+    }
+
+    .practice-list {
+        margin: 3rem 0 4rem;
     }
 
     .practice-img-caption {
@@ -601,7 +624,7 @@ body {
 }
 
 .price {
-    margin: 1.75rem 1rem;
+    margin: 2rem 1.5rem;
 }
 
 .price-title {
@@ -609,6 +632,7 @@ body {
     font-size: 2.5rem;
     font-family: "Segoe Script";
     text-align: center;
+    margin: 2rem 0;
 }
 
 .price-title:after {
@@ -696,8 +720,13 @@ body {
 }
 
 @media screen and (min-width: 600px) and (max-width: 900px) {
+    .price {
+        margin: 2rem 2rem 3rem;
+    }
+
     .price-title {
         font-size: 3rem;
+        margin: 2rem 0;
     }
 
     .price-text {
@@ -729,8 +758,13 @@ body {
 }
 
 @media screen and (min-width: 900px) and (max-width: 1200px) {
+    .price {
+        margin: 2rem 2rem 3rem;
+    }
+
     .price-title {
         font-size: 4rem;
+        margin: 2rem 0;
     }
 
     .price-text {
@@ -764,7 +798,7 @@ body {
 
 @media screen and (min-width: 1800px) {
     .price {
-        margin: 3rem auto;
+        margin: 3rem 0 4rem;
     }
 
     .price-cost-item {
@@ -773,6 +807,7 @@ body {
 
     .price-title {
         font-size: 4rem;
+        margin: 3rem 0;
     }
 
     .price-text {
@@ -802,12 +837,17 @@ body {
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1800px) {
+    .price {
+        margin: 2rem 3rem 3rem;
+    }
+
     .price-cost-item {
         margin: 1.75rem 0;
     }
 
     .price-title {
         font-size: 4rem;
+        margin: 2rem 0;
     }
 
     .price-text {
