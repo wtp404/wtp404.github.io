@@ -72,7 +72,7 @@ body {
 
 .intro_center {
     margin: 25% 1rem 20%;
-    max-width: 860px;
+
     text-align: center;
 }
 
@@ -133,7 +133,7 @@ body {
 
 .intro_footer {
     text-align: center;
-    margin: 10% 1em 1em;
+    margin: 7.5% 1em 1em;
 }
 
 .intro_footer-text {
@@ -182,8 +182,7 @@ body {
 
     .intro_center {
         flex-grow: 1;
-        margin: auto;
-        max-width: 75%;
+        margin: auto 12.5%;
     }
 
     .intro_contact {
