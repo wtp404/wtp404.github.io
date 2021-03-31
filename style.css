@@ -497,7 +497,7 @@ body {
 }
 
 .practice-list-item {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
     line-height: 1.2;
     margin-bottom: 1.5rem;
@@ -543,6 +543,10 @@ body {
 }
 
 @media screen and (min-width: 600px) {
+    .practice-list-item {
+        font-size: 1.25rem;
+    }
+
     .practice-img {
         height: 50vw;
     }
@@ -573,6 +577,10 @@ body {
 }
 
 @media screen and (min-width: 900px) {
+    .practice-list-item {
+        font-size: 1.5rem;
+    }
+
     .practice-img {
       height: 500px;
       background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(img/learning.jpeg);
