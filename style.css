@@ -1,3 +1,12 @@
+@font-face {
+    font-family: "Segoe Script";
+    src: url("font/Segoe-Scriptr.eot?#iefix") format("embedded-opentype"),
+        url("font/Segoe-Script.woff2") format("woff2"),
+        url("font/Segoe-Script.woff") format("woff"),
+        url("font/Segoe-Script.ttf") format("truetype"),
+        url("font/Segoe-Script.svg") format("svg");
+}
+
 body {
     color: #313030;
     font-family: 'Arsenal', sans-serif;
@@ -87,7 +96,7 @@ body {
 .intro_center-text {
     color: #f5b553;
     font-size: 1rem;
-    font-family: "Segoe Script";
+    font-family: 'Segoe Script', cursive;
     line-height: 1.2;
     margin: 0.75em auto;
 }
@@ -130,7 +139,7 @@ body {
 .intro_footer-text {
     font-size: 1.25rem;
     color: #fff;
-    font-family: "Arsenal";
+    font-family: "Arsenal", sans-serif;
     font-weight: 700;
     line-height: 1.2;
 }
@@ -290,7 +299,7 @@ body {
 .about-title {
     color:#f5b553;
     font-size: 2.5rem;
-    font-family: "Segoe Script";
+    font-family: 'Segoe Script', cursive;
     text-align: center;
 }
 
@@ -469,7 +478,7 @@ body {
 .practice-title {
     color:#f5b553;
     font-size: 2.5rem;
-    font-family: "Segoe Script";
+    font-family:  'Segoe Script', cursive;
     margin: 2rem 1.5rem;
     text-align: center;
 }
@@ -523,7 +532,7 @@ body {
 
 .practice-img-caption {
     color: rgb(245, 181, 83);
-    font-family: "Segoe Script";
+    font-family:  'Segoe Script', cursive;
     font-size: 1.5rem;
     font-weight: bold;
     line-height: 1.2;
@@ -632,7 +641,7 @@ body {
 .price-title {
     color: #f5b553;
     font-size: 2.5rem;
-    font-family: "Segoe Script";
+    font-family: 'Segoe Script', cursive;
     text-align: center;
     margin: 2rem 0;
 }
@@ -676,7 +685,7 @@ body {
 
 .price-const-right {
     font-size: 1.25rem;
-    font-family: "Segoe Script";
+    font-family: 'Segoe Script', cursive;
     color: rgb(68, 110, 126);
     font-weight: bold;
     line-height: 1.2;
@@ -694,7 +703,7 @@ body {
 
 .price-hours {
     font-size: 1.5rem;
-    font-family: "Segoe Script";
+    font-family: 'Segoe Script', cursive;
     color: rgb(68, 110, 126);
     font-weight: bold;
     line-height: 1.2;
