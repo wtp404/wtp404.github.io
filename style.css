@@ -111,11 +111,12 @@ body {
     line-height: 1.2;
 }
 
-.intro_contact-item span {
-    font-weight: bold;
+.intro_contact-item * {
+    font-weight: 700;
 }
 
-.intro_contact-item a {
+.intro_contact-link {
+    font-weight: 400;
     text-decoration: underline;
     text-decoration-style: dashed;
     text-decoration-color: rgba(255, 255, 255, 0.25);
@@ -905,10 +906,9 @@ body {
 }
 
 .footer-link {
-    color: #fff;
-    font-size: 0.9rem;
-    text-decoration: none;
-    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-decoration-color: rgba(255, 255, 255, 0.25);
 }
 
 @media screen and (min-width: 600px) {
@@ -923,10 +923,6 @@ body {
 
 @media screen and (min-width: 900px) {
     .footer-text {
-        font-size: 1.2rem;
-    }
-
-    .footer-link {
         font-size: 1.2rem;
     }
 }
