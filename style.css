@@ -511,7 +511,7 @@ body {
 
 .practice-img {
     background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(img/learning-450.jpeg);
-    backgroundlinear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), -image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(img/learning-450.webp);
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(img/learning-450.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -535,7 +535,7 @@ body {
 
 @media screen and (min-width: 600px) {
     .practice-img {
-        height: 500px;
+        height: 50vw;
     }
 
     .practice-img-caption {
@@ -565,7 +565,8 @@ body {
 
 @media screen and (min-width: 900px) {
     .practice-img {
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(img/learning.jpeg);
+      height: 500px;
+      background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(img/learning.jpeg);
       background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(img/learning.webp);
     }
 
