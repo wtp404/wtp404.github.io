@@ -1,0 +1,891 @@
+body {
+    color: #313030;
+    font-family: 'Arsenal', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    width: calc(100vw - (100vw - 100%));
+    word-wrap: break-word;
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.container{
+    max-width: 1230px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.text-line {
+    display: block;
+}
+
+.text-yellow {
+    color: #f5b553;
+}
+
+.text-blue {
+    color: #446e7e;
+}
+
+.intro {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("/img/hero-450.jpeg");
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("img/hero-450.webp");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.intro_container {
+    align-items: stretch;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+.intro_header {
+    margin: 0.5em;
+}
+
+.intro_header-text {
+    color: #fff;
+    font-size: 1rem;
+    text-align: right;
+}
+
+.intro_center {
+    margin: 25% 1rem 20%;
+    max-width: 860px;
+    text-align: center;
+}
+
+.intro_center-title {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 1.25em auto 0.75em;
+    word-wrap: normal;
+}
+
+.intro_center-subtitle {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.2;
+    margin: 0.75em auto;
+}
+
+.intro_center-text {
+    color: #f5b553;
+    font-size: 1rem;
+    font-family: "Segoe Script";
+    line-height: 1.2;
+    margin: 0.75em auto;
+}
+
+.intro_contact {
+    align-items: stretch;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+}
+
+.intro_contact-list {
+    margin: 1rem;
+}
+
+.intro_contact-item {
+    color: #fff;
+    list-style: none;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.intro_contact-item span {
+    font-weight: bold;
+}
+
+.intro_contact-item a {
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-decoration-color: rgba(255, 255, 255, 0.25);
+}
+
+.intro_footer {
+    text-align: center;
+    margin: 10% 1em 1em;
+}
+
+.intro_footer-text {
+    font-size: 1.25rem;
+    color: #fff;
+    font-family: "Arsenal";
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+@media screen and (min-width: 400px) and (max-width: 600px) {
+    .intro_center {
+        margin: 25% 10% 20%;
+    }
+
+    .intro_center-title {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    .intro {
+        background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("/img/hero-750.jpeg");
+        background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("img/hero-750.webp");
+    }
+
+    .intro_center {
+        margin: 0.5em auto 0.25em;
+    }
+
+    .intro_center-title {
+        font-size: 3.5rem;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .intro {
+        background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("/img/hero.jpeg");
+        background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("img/hero.webp");
+        height: 100vh;
+    }
+
+    .intro_header {
+        margin: 1.5em;
+    }
+
+    .intro_center {
+        flex-grow: 1;
+        margin: auto;
+        max-width: 75%;
+    }
+
+    .intro_contact {
+        flex-direction: row;
+    }
+
+    .intro_footer {
+        margin: 1em;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+    .intro {
+        min-height: 525px;
+    }
+
+    .intro_center-title {
+        font-size: 4rem;
+        margin: 0.25em auto 0.5em;
+    }
+
+    .intro_center-subtitle {
+        font-size: 1.25rem;
+    }
+
+    .intro_center-text {
+        font-size: 1.25rem;
+    }
+
+    .intro_footer {
+        margin: 1.25em;
+    }
+
+    .intro_footer-text {
+        font-size: 1.25em;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1800px) {
+    .intro {
+        min-height: 600px;
+    }
+
+    .intro_header-text {
+        font-size: 1.25rem;
+    }
+
+    .intro_center-title {
+        font-size: 5rem;
+        margin: 0.25em auto;
+    }
+
+    .intro_center-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .intro_center-text {
+        font-size: 1.5rem;
+    }
+
+    .intro_contact-item {
+        font-size: 1.25rem;
+    }
+
+    .intro_footer {
+        margin: 1.25em;
+    }
+
+    .intro_footer-text {
+        font-size: 1.75em;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .intro {
+        min-height: 765px;
+    }
+
+    .intro_header-text {
+        font-size: 1.5rem;
+    }
+
+    .intro_center-title {
+        font-size: 6rem;
+        margin: 1em auto 0.5em;
+    }
+
+    .intro_center-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .intro_center-text {
+        font-size: 1.5rem;
+    }
+
+    .intro_contact-item {
+        font-size: 1.5rem;
+    }
+
+    .intro_footer {
+        margin: 1.5em;
+    }
+
+    .intro_footer-text {
+        font-size: 1.75em;
+    }
+}
+
+.about {
+    margin: 1.75rem 1rem;
+}
+
+.about-title {
+    color:#f5b553;
+    font-size: 2.5rem;
+    font-family: "Segoe Script";
+    text-align: center;
+}
+
+.about-title:after {
+    content: "";
+    display: block;
+    width: 5em;
+    height: 2px;
+    margin: 0 auto;
+    background-color: #446e7e;
+}
+
+.about-content {
+    align-items: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    margin-top: 2.5rem;
+    vertical-align: middle;
+}
+
+.about-text {
+    font-size: 1rem;
+    margin-bottom: 0.75em;
+    text-align: left;
+}
+
+@media screen and (min-width: 600px) {
+    .about {
+        margin: 1rem 2rem;
+    }
+
+    .about-content {
+        flex-direction: row;
+    }
+
+    .about-content > * {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+
+    .about-text {
+        margin-bottom: auto;
+        padding-right: 1rem;
+    }
+
+    .about-img {
+        padding-left: 1rem;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    .about-title {
+        font-size: 3rem;
+    }
+
+    .about-text {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .about-title::after {
+        height: 3px;
+    }
+
+    .about-text {
+        padding-right: 2rem;
+    }
+
+    .about-img {
+        padding-left: 2rem;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+    .about-title {
+        font-size: 4rem;
+    }
+
+    .about-text {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .about {
+        margin: 3rem auto;
+    }
+
+    .about-title {
+        font-size: 4rem;
+    }
+
+    .about-text {
+        font-size: 1.75rem;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1800px) {
+    .about-title {
+        font-size: 4rem;
+    }
+
+    .about-text {
+        font-size: 1.75rem;
+    }
+}
+
+.advantages {
+    background-color: #f5b553;
+    margin: 1.75rem auto;
+    padding: 1rem;
+}
+
+.advantages-items {
+    align-items: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.advantages-item {
+    margin: 1.75rem auto;
+    max-width: 250px;
+}
+
+.advantages-item-text {
+    font-size: 1.5rem;
+    margin-top: 0.75em;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1200px){
+    .advantages-items {
+        align-items: flex-start;
+        flex-flow: row wrap;
+    }
+
+    .advantages-item {
+        flex-basis: 50%;
+        max-width: 50%;
+        padding: 1rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .advantages {
+        padding: 2rem;
+    }
+
+    .advantages-items {
+        align-items: flex-start;
+        flex-flow: row wrap;
+    }
+
+    .advantages-item {
+        flex-basis: 25%;
+        max-width: 25%;
+        padding: 1rem;
+    }
+
+    .advantages-item-text {
+        font-size: 1.5rem;
+    }
+}
+
+.practice-title {
+    color:#f5b553;
+    font-size: 2.5rem;
+    font-family: "Segoe Script";
+    margin: 1.75rem 1.5rem;
+    text-align: center;
+}
+
+.practice-title:after {
+    content: "";
+    display: block;
+    width: 5em;
+    height: 2px;
+    margin: 0 auto;
+    background-color: #446e7e;
+}
+
+.practice-list {
+    margin: 2rem auto;
+    max-width: 900px;
+}
+
+.practice-list-item {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    margin-left: 50px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.practice-list-item:before {
+    content: "";
+    display: block;
+    height: 29px;
+    width: 29px;
+    background-color: #446e7e;
+    border: 1px solid #f5b553;
+    position: absolute;
+    top: 5px; left: -40px;
+
+}
+
+.practice-img {
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(img/learning-450.jpeg);
+    backgroundlinear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), -image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(img/learning-450.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75vw;
+    width: 100%;
+    position: relative;
+}
+
+.practice-img-caption {
+    color: rgb(245, 181, 83);
+    font-family: "Segoe Script";
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.2;
+    padding: 1.5rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+    .practice-list {
+        margin: 2rem;
+    }
+
+    .practice-img {
+        height: 500px;
+    }
+
+    .practice-img-caption {
+        padding: 3rem;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    .practice-img {
+        background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(img/learning-750.jpeg);
+        background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(img/learning-750.webp);
+    }
+
+    .practice-title {
+        font-size: 3rem;
+    }
+
+    .practice-img-caption {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 900px) {
+  .practice-img {
+      background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(img/learning.jpeg);
+      background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(img/learning.webp);
+  }
+
+    .practice-title::after {
+        height: 3px;
+    }
+
+    .practice-list {
+        margin: 3rem;
+    }
+
+    .practice-img-caption {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+    .practice-title {
+        font-size: 4rem;
+    }
+
+    .practice-img-caption {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1800px) {
+    .practice-img-caption {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .practice-title {
+        font-size: 4rem;
+    }
+
+    .practice-img-caption {
+        font-size: 5rem;
+    }
+}
+
+.price {
+    margin: 1.75rem 1rem;
+}
+
+.price-title {
+    color: #f5b553;
+    font-size: 2.5rem;
+    font-family: "Segoe Script";
+    text-align: center;
+}
+
+.price-title:after {
+    background-color: #446e7e;
+    content: "";
+    display: block;
+    height: 2px;
+    margin: 0 auto;
+    width: 5em;
+}
+
+.price-text {
+    font-size: 1rem;
+    margin: 0.5em 0;
+    text-align: left;
+}
+
+.price-text-b {
+    font-size: 1.2rem;
+    margin: 1em 0;
+    text-align: left;
+}
+
+.price-text-strong {
+    font-weight: 700;
+}
+
+.price-cost-item {
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    margin: 1rem 0;
+}
+
+.price-const-image {
+    width: 30px;
+}
+
+.price-const-right {
+    font-size: 1.25rem;
+    font-family: "Segoe Script";
+    color: rgb(68, 110, 126);
+    font-weight: bold;
+    line-height: 1.2;
+    flex-grow: 1;
+    text-align: right;
+}
+
+.price-free {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    margin: 1.25em 0;
+}
+
+.price-hours {
+    font-size: 1.5rem;
+    font-family: "Segoe Script";
+    color: rgb(68, 110, 126);
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 0 0.5em;
+}
+
+.price-hours_text {
+    font-size: 1.2rem;
+    margin: 0 1em;
+    text-align: left;
+}
+
+@media screen and (min-width: 600px) {
+    .price {
+        margin: 1rem 2rem;
+    }
+
+    .price-const-image {
+        width: 40px;
+    }
+
+    .price-text {
+        padding-right: 1rem;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    .price-title {
+        font-size: 3rem;
+    }
+
+    .price-text {
+        font-size: 1rem;
+    }
+
+    .price-text-b {
+        font-size: 1.2rem;
+    }
+
+    .price-free {
+        font-size: 2rem;
+        margin: 0.75em 0;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .price-cost-item {
+        margin: 1.5rem 0;
+    }
+
+    .price-title::after {
+        height: 3px;
+    }
+
+    .price-text {
+        padding-right: 2rem;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+    .price-title {
+        font-size: 4rem;
+    }
+
+    .price-text {
+        font-size: 1.5rem;
+    }
+
+    .price-text-b {
+        font-size: 1.8rem;
+    }
+
+    .price-const-image {
+        width: 50px;
+    }
+
+    .price-const-right {
+        font-size: 2rem;
+    }
+
+    .price-hours {
+        font-size: 2.2rem;
+    }
+
+    .price-hours_text {
+        font-size: 1.8rem;
+    }
+
+    .price-free {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .price {
+        margin: 3rem auto;
+    }
+
+    .price-cost-item {
+        margin: 2.25rem 0;
+    }
+
+    .price-title {
+        font-size: 4rem;
+    }
+
+    .price-text {
+        font-size: 1.75rem;
+    }
+
+    .price-text-b {
+        font-size: 2.2rem;
+    }
+
+    .price-const-right {
+        font-size: 2.25rem;
+    }
+
+    .price-hours {
+        font-size: 2.5rem;
+    }
+
+    .price-hours_text {
+        font-size: 2.2rem;
+    }
+
+    .price-free {
+        font-size: 2.8rem;
+        margin: 1.5em 0 0.3em;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1800px) {
+    .price-cost-item {
+        margin: 1.75rem 0;
+    }
+
+    .price-title {
+        font-size: 4rem;
+    }
+
+    .price-text {
+        font-size: 1.75rem;
+    }
+
+    .price-text-b {
+        font-size: 2.2rem;
+    }
+
+    .price-const-image {
+        width: 50px;
+    }
+
+    .price-const-right {
+        font-size: 2rem;
+    }
+
+    .price-hours {
+        font-size: 2.2rem;
+    }
+
+    .price-hours_text {
+        font-size: 2.2rem;
+    }
+
+    .price-free {
+        font-size: 2.6rem;
+        margin: 0.1em 0 0.5em;
+    }
+}
+
+.footer {
+    background-color: #446e7e;
+    color: #fff;
+    line-height: 1.2;
+}
+
+.footer-content {
+    align-items: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    text-align:center;
+    padding: 1em;
+}
+
+.footer-left {
+    margin-bottom: 2rem;
+}
+
+.footer-text {
+    font-size: 0.9rem;
+}
+
+.footer-link {
+    color: #fff;
+    font-size: 0.9rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 600px) {
+    .footer-content {
+        flex-direction: row;
+    }
+
+    .footer-left {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .footer-text {
+        font-size: 1.2rem;
+    }
+
+    .footer-link {
+        font-size: 1.2rem;
+    }
+}
