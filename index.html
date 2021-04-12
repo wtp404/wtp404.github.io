@@ -2,167 +2,132 @@
 <html lang="ru">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>ЛингваАссистент - Онлайн уроки английского языка</title>
-    <meta name="description" content="Онлайн-занятия английского языка у опытных репетиторов. Обучение по 3 направлениям: бизнес английский, общий английский и английский для детей.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/favicon.ico"><!-- 32x32 -->
-    <link rel="icon" href="/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png"><!-- 180x180 -->
+    <title>Master English - Школа английского языка в Гродно</title>
+    <meta name="description" content="Школа Master English предлагает изучение английского языка на высоком уровне для всех желающих.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="icon.svg">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&family=Qwigley&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher&family=Prata&family=Tenor+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <h1 class="visually-hidden">Ваш ЛингваАссистент</h1>
-    <header class="header">
-        <h2 class="visually-hidden">Верхний колонтитул с временем работы</h2>
+<body class="page">
+    <h1 class="visually-hidden"><span lang="en">Master English</span> - Школа английского языка в Гродно</h1>
+    <header class="page__header">
+        <nav class="menu js-menu">
+            <h2 class="visually-hidden">Основная навигация</h2>
+            <ul class="menu__list">
+                <li class="menu__item"><a href="services.html" class="menu__link">Программы</a></li>
+                <li class="menu__item"><a href="training.html" class="menu__link">Подход</a></li>
+                <li class="menu__item"><a href="teacher.html" class="menu__link">Преподаватель</a></li>
+                <li class="menu__item logo"><a lang ="en" href="/" class="menu__link logo__text">Master English</a></li>
+                <li class="menu__item"><a href="contacts.html" class="menu__link">Контакты</a></li>
+            </ul>
+            <svg class="menu__trigger" viewBox="0 0 62 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line y1="-2.5" x2="60" y2="-2.5" transform="matrix(1 0 -0.0285162 0.999593 0.983398 5)" stroke="#ED3900" stroke-width="5"/>
+                <line y1="-2.5" x2="60" y2="-2.5" transform="matrix(1 0 -0.0285162 0.999593 0.983398 30)" stroke="#ED3900" stroke-width="5"/>
+                <line y1="-2.5" x2="60" y2="-2.5" transform="matrix(1 0 -0.0285162 0.999593 0.983398 55)" stroke="#ED3900" stroke-width="5"/>
+            </svg>
+        </nav>
     </header>
-    <main>
-        <section class="intro">
+    <main class="content">
+        <section class="hero">
             <h2 class="visually-hidden">Превью</h2>
-            <div class="intro_container container">
-                <div class="intro_header">
-                    <p class="intro_header-text">Репетитор | Минск</p>
-                    <p class="intro_header-text">Пн.-Сб.: с 8:00 до 21:00</p>
-                    <p class="intro_header-text">На связи - круглосуточно</p>
-                </div>
-                <div class="intro_center">
-                    <p class="intro_center-title">Ваш <span class="text-yellow">Лингва</span><span class="text-blue">Ассистент</span></p>
-                    <p class="intro_center-subtitle">Занимайтесь с опытными репетиторами онлайн!</p>
-                    <p class="intro_center-text">Английский язык с нуля до уровня носителя</p>
-                </div>
-                <div class="intro_contact">
-                    <ul class="intro_contact-list">
-                        <li class="intro_contact-item">Tел: <a class="intro_contact-link" href="tel:+375172803506">+375 17-280-35-06</a></li>
-                        <li class="intro_contact-item">A1: <a class="intro_contact-link" href="tel:+375299214652">+375 29 921-46-52</a></li>
-                        <li class="intro_contact-item">MTC: <a class="intro_contact-link" href="tel:+375336011424">+375 33 601-14-24</a></li>
-                    </ul>
-                    <ul class="intro_contact-list">
-                        <li class="intro_contact-item"><span lang="en">Viber</span>: <a class="intro_contact-link" href="viber://chat?number=375299214652">+375 29 921-46-52</a></li>
-                        <li class="intro_contact-item"><span lang="en">Skype</span>: <a class="intro_contact-link" href="skype:LinguaAssistant">LinguaAssistant</a></li>
-                        <li class="intro_contact-item"><span lang="en">E-mail</span>: <a class="intro_contact-link" href="mailto:info@lingva-a.by">info@lingva-a.by</a></li>
+            <p class="hero__title">Школа английского языка в Гродно</p>
+            <p class="hero__copy">Изучая вместе с нами английский язык, Вы улучшаете свои когнитивные способности: память, мышление, внимание.</p>
+            <p class="hero__copy">Мы поможем развить Ваш потенциал, расширить кругозор.</p>
+            <p class="hero__copy">После занятий с нами Вы сможете путешествовать, используя английский язык как способ познания культуры других стран.</p>
+        </section>
+        <section class="wrapper">
+            <h2 class="content__title">Содержание обучения</h2>
+            <p class="content__text content__text--center-desktop">Изучение иностранного языка предполагает формирование и развитие следующих умений и компетенций:</p>
+            <div class="table-skills">
+                <div class="table-skills__item">
+                    <p class="content__subtitle table-skills__title">Говорение</p>
+                    <ul>
+                        <li><p class="content__text table-skills__text">Диалог</p></li>
+                        <li><p class="content__text table-skills__text">Монолог</p></li>
+                        <li><p class="content__text table-skills__text">Дискуссия</p></li>
+                        <li><p class="content__text table-skills__text">Дебаты</p></li>
                     </ul>
                 </div>
-                <div class="intro_footer">
-                    <p class="intro_footer-text">Первое занятие с репетитором онлайн (пробное) - бесплатно</p>
+                <div class="table-skills__item">
+                    <p class="content__subtitle table-skills__title">Чтение</p>
+                    <ul>
+                        <li><p class="content__text table-skills__text">Научные и художественные тексты</p></li>
+                        <li><p class="content__text table-skills__text">Новостные публикации</p></li>
+                        <li><p class="content__text table-skills__text">Статьи из газет и журналов</p></li>
+                        <li><p class="content__text table-skills__text">Электронные веб-ресурсы</p></li>
+                    </ul>
+                </div>
+                <div class="table-skills__item">
+                    <p class="content__subtitle table-skills__title">Аудирование</p>
+                    <ul>
+                        <li><p class="content__text table-skills__text">Прослушивание и просмотр аудиовизуальных материалов</p></li>
+                        <li><p class="content__text table-skills__text">Использование записей с британским и американским вариантами произношения, с различными региональными акцентами</p></li>
+                    </ul>
+                </div>
+                <div class="table-skills__item">
+                    <p class="content__subtitle table-skills__title">Письмо</p>
+                    <ul>
+                        <li><p class="content__text table-skills__text">Ессе</p></li>
+                        <li><p class="content__text table-skills__text">Резюме</p></li>
+                        <li><p class="content__text table-skills__text">Письма</p></li>
+                        <li><p class="content__text table-skills__text">Социальные сети</p></li>
+                    </ul>
                 </div>
             </div>
         </section>
-        <section class="about">
-            <div class="container">
-                <h2 class="about-title">О нас</h2>
-                <div class="about-content">
-                    <p class="about-text">Занятия по английскому в онлайн-школе <span class="text-yellow">
-                        Лингва</span><span class="text-blue">Ассистент</span> - это уроки
-                        вживую с репетитором, которого нет в Вашем городе.
-                        НАШИ ПРЕПОДАВАТЕЛИ - это репетиторы по английскому
-                        языку как для детей, так и для взрослых, имеющие
-                        лингвистическое и филологическое образование,
-                        а также успешный опыт работы от 7 лет.</p>
-                        <picture>
-                          <source srcset="img/about-400.webp" media="(max-width: 900px)" type="image/webp">
-                          <source srcset="img/about-400.jpeg" media="(max-width: 900px)">
-                          <source srcset="img/about.webp" type="image/webp">
-                          <img class="about-img" src="img/about.jpeg" alt="Мальчик слушает видеоурок за рабочим местом.">
-                        </picture>
-
+        <section class="wrapper">
+            <h2 class="content__title">Преимущества</h2>
+            <ul class="list-features">
+                <li class="list-features__item">
+                    <p class="content__subtitle list-features__title">Современный интерактивный подход к изучению английского языка</p>
+                    <p class="content__text list-features__text">Предполагает субьективно-субъективную парадигму взаимодействия учителя и ученика. </p>
+                    <p class="content__text list-features__text">Данный подход основан на многолетнем опыте изучения американстких подходов к организации педогогического взаимодействия.</p>
+                </li>
+                <li class="list-features__item">
+                    <p lang="en" class="content__subtitle list-features__title">RP pronunciation</p>
+                    <p class="content__text list-features__text">Обучаем британскому нормативному произношению, т. н. “Королевскому английскому”, объясняем разницу между американским и британским вариантами языка.</p>
+                    <p class="content__text list-features__text">Научим пользоваться транскрипцией для правильного произнесения английских слов.</p>
+                </li>
+                <li class="list-features__item">
+                    <p class="content__subtitle list-features__title">Гибкая система обучения</p>
+                    <p class="content__text list-features__text">Позволяюет конструировать учебный процесс в зависимости от Ваших целей, интересов и познавательных потребностей, индивидуально-личностных особенностей и уровня владения английским языком.</p>
+                    <p class="content__text list-features__text">Возможны как индивидуальные, так и групповые занятия.</p>
+                </li>
+            </ul>
+        </section>
+        <section class="wrapper wrapper--reset-sides">
+            <h2 class="content__title">Преподаватель</h2>
+            <div class="two-up">
+                <div class="two-up__aside">
+                    <picture>
+                        <source srcset="img/teacher.webp" type="image/webp">
+                        <img class="two-up__image" src="img/teacher.jpg" alt="Фотография преподавателя с выпускного после магистратуры.">
+                    </picture>
                 </div>
-            </div>
-        </section>
-        <section class="advantages">
-            <h2 class="visually-hidden">Преимущества</h2>
-            <div class="container">
-                <ul class="advantages-items">
-                    <li class="advantages-item">
-                         <img class="advantages-item-img" src="img/speach.png" alt="">
-                         <p class="advantages-item-text">Говорение без ошибок и понимание речи на слух</p>
-                    </li>
-                    <li class="advantages-item">
-                         <img class="advantages-item-img" src="img/home.png" alt="">
-                         <p class="advantages-item-text">Изучение английского в удобном для ученика месте</p>
-                   </li>
-                   <li class="advantages-item">
-                        <img class="advantages-item-img" src="img/group.png" alt="">
-                        <p class="advantages-item-text">Подготовка к ЦТ в мини-группах без траты времени на дорогу</p>
-                   </li>
-                   <li class="advantages-item">
-                        <img class="advantages-item-img" src="img/display.png" alt="">
-                        <p class="advantages-item-text">Четкое отображение материала на экране, интерактивная онлайн-доска</p>
-                   </li>
-               </ul>
-            </div>
-        </section>
-        <section class="practice">
-            <div class="container">
-                 <h2 class="practice-title">Что Вас ждет</h2>
-                 <ul class="practice-list">
-                    <li class="practice-list-item">Практика разговорной речи и аудирования с первых уроков</li>
-                    <li class="practice-list-item">Постоянная наработка хорошего словарного запаса</li>
-                    <li class="practice-list-item">Использование лучших и проверенных временем учебников</li>
-                    <li class="practice-list-item">Понятное объяснение репетитором грамматики</li>
-                    <li class="practice-list-item">Произношение и правила чтения</li>
-                  </ul>
-            </div>
-            <div class="practice-img">
-                <p class="practice-img-caption">Учить с нами английский - легко!</p>
-            </div>
-        </section>
-        <section class="price">
-            <div class="container">
-                <h2 class="price-title">Прайс-лист</h2>
-                <p class="price-text-b">Занятия по английскому в онлайн-школе <span class="text-yellow">Лингва</span><span class="text-blue">Ассистент</span> прелагает обучение по трём направлениям:</p>
-                <ul class="price-list">
-                    <li class="price-text"><span class="price-text-strong">Бизнес-английский.</span> Для делового общения и переписки с подбором материалов в зависимости от сферы деятельности ученика.</li>
-                    <li class="price-text"><span class="price-text-strong">Общий английский.</span> Для повседневного общения на различные темы при поездке за границу в туристических, учебных и прочих целях.</li>
-                    <li class="price-text"><span class="price-text-strong">Английский для детей.</span> Обучение школьников любых классов с подбором увлекательных материалов, подготовка к ЦТ старшеклассников.</li>
-                </ul>
-                <div class="price-cost">
-                    <div class="price-cost-item">
-                        <img class="price-const-image" src="img/clock.png" alt="">
-                        <p class="price-hours">x1</p>
-                        <p class="price-hours_text">Одно занятие в час </p>
-                        <p class="price-const-right">15,00 BYN</p>
-                    </div>
-                    <div class="price-cost-item">
-                        <img class="price-const-image" src="img/clock.png" alt="">
-                        <p class="price-hours">x2</p>
-                        <p class="price-hours_text">Два занятия по часу</p>
-                        <p class="price-const-right">30,00 BYN</p>
-                    </div>
-                    <div class="price-cost-item">
-                        <img class="price-const-image" src="img/clock.png" alt="">
-                        <p class="price-hours">x8</p>
-                        <p class="price-hours_text">Восемь занятий по 90 минут </p>
-                        <p class="price-const-right">60,00 BYN</p>
-                    </div>
-                    <p class="price-free">Первое занятие с репетитором онлайн (пробное) - бесплатно.</p>
+                <div class="two-up__body">
+                    <p class="content__subtitle two-up__text">Магистр педагогических наук</p>
+                    <p class="content__subtitle two-up__text">18 лет пед. стаж работы в должности преподавателя английского языка в 3-х ведущих вузах Беларуси</p>
+                    <p class="content__subtitle two-up__text">10 лет руководства педагогической практикой студентов 5-го курса МГЛУ</p>
+                    <p class="content__subtitle two-up__text">Стажировка в школах г.Вашингтона (США)</p>
+                    <p class="content__subtitle two-up__text">18 научных публикаций по теме "Педагогическое взаимодействие"</p>
                 </div>
             </div>
         </section>
     </main>
-  <footer class="footer">
-    <div class="container">
-      <h2 class="visually-hidden">Нижний колонтитул с контактами</h2>
-      <div class="footer-content">
-        <div class="footer-left">
-                    <p class="footer-text">КОНТАКТЫ ДЛЯ СВЯЗИ</p>
-                    <ul>
-                        <li class="footer-text">A1: <a class="footer-link" href="tel:+375299214652">+375 29 921-46-52</a></li>
-                        <li class="footer-text">MTC: <a class="footer-link" href="tel:+375336011424">+375 33 601-14-24</a></li>
-                        <li class="footer-text"><span lang="en">E-mail: <a class="footer-link" href="mailto:info@lingva-a.by">info@lingva-a.by</a></span></li>
-                    </ul>
-                    <a class="footer-text footer-link" href="/public-contract.pdf">Публичный договор</a>
-                </div>
-                <div class="footer-right">
-                    <p class="footer-text">ИП БЕЛОБЛОЦКИЙ В.Л</p>
-                    <p class="footer-text">УНП 193068080</p>
-                    <p class="footer-text">Адрес: г.Минск, РБ.	</p>
-                </div>
-            </div>
-        </div>
+    <footer class="page__footer">
+        <nav class="menu menu--hidden menu--small">
+            <h2 class="visually-hidden">Нижний колонтитул</h2>
+            <ul class="menu__list">
+                <li class="menu__item logo logo--small"><a lang="en" href="/" class="menu__link logo__text">Master English</a></li>
+                <li class="menu__item"><a href="contacts.html" class="menu__link">Контакты</a></li>
+            </ul>
+        </nav>
     </footer>
 </body>
 </html>
