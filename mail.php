@@ -1,5 +1,3 @@
-<!-- Через 10 секунд после появления сообщения об отправке или ошибке — отправляемся на сайт Кода :) -->
-<meta http-equiv='refresh' content='10; url=http://thecode.local/'>
 <meta charset="UTF-8" />
 <!-- Начался блок PHP -->
 <?php
@@ -14,5 +12,6 @@ $mes = "E-mail: $email \nТема: $header \nТекст: $message";
 $send = mail("annamishustina.ik@gmail.com", $header, $mes, "Content-type:text/plain; charset = UTF-8\r\nFrom:$email");
 // Если отправка прошла успешно — так и пишем
 if ($send == 'true') {echo "Сообщение отправлено";}
-// Если письмо не ушло — выводим сообщение об ошибке else {echo "Ой, что-то пошло не так";}
+// Если письмо не ушло — выводим сообщение об ошибке
+else {echo "Ой, что-то пошло не так";}
 ?>
