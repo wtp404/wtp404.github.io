@@ -45,9 +45,11 @@
                 </div>
                 <div class="two-up__body">
                     <p class="content__subtitle contacts-block__title">Написать:</p>
-                    <form class="form-message" action="">
-                        <label for="theme" class="form-message__label">Тема:</label>
-                        <input class="form-message__field" name="theme" id="theme" type="text">
+                    <form class="form-message" action="mail.php" method="post" name="form">
+                        <label for="email" class="form-message__label" lang="en">Email:</label>
+                        <input class="form-message__field" name="email" id="email" type="text">
+                        <label for="header" class="form-message__label">Тема:</label>
+                        <input class="form-message__field" name="header" id="header" type="text">
                         <label for="message" class="form-message__label">Сообщение:</label>
                         <textarea class="form-message__field" name="message" id="message" rows="5"></textarea>
                         <button class="form-message__button" type="submit">Отправить</button>
