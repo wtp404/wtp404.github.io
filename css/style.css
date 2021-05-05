@@ -66,13 +66,14 @@ body, html {
     justify-content: flex-start;
 }
 
+
 .menu__link {
     border-bottom: 1px solid rgb(234, 168, 147);
     border-bottom: 1px solid rgba(237, 57, 0, 0.25);
     color: rgb(237, 57, 0);
     display: block;
     font-family: "Philosopher", sans-serif;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     letter-spacing: 0.1em;
     padding: 1.25em 1em 1em;
     text-align: left;
@@ -83,10 +84,11 @@ body, html {
     font-size: 6.5vw;
     height: 6vw;
     width: 6vw;
-    padding: 0.7em 0.5em 0.5em;
-    top: 0; right: 0;
+    padding: 0.7em 0.5em;
+    top: 35px; right: 0;
+    transform: translateY(-50%);
     position: absolute;
-    transition: transform  1s ease;
+    transition: transform 600ms;
 }
 
 .menu__trigger--close :nth-child(1) {
@@ -127,11 +129,15 @@ body, html {
 
 @media screen and (min-width: 1200px) {
     .menu {
-      position: relative;
+        position: relative;
     }
 
     .menu--hidden {
         height: auto;
+    }
+
+    .menu__trigger {
+      display: none;
     }
 
     .menu__list {
@@ -152,6 +158,10 @@ body, html {
 .logo {
     order: -1;
     text-align: center;
+    height: 75px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
 }
 
 .logo__text {
@@ -177,6 +187,10 @@ body, html {
     .logo {
         margin: 0 1em;
         order: 0;
+        height: auto;
+        display: block;
+        flex-flow: column nowrap;
+        justify-content: center;
     }
 
     .logo__text {
