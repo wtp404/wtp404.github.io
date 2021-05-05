@@ -19,15 +19,17 @@ body, html {
 }
 
 .page__header {
+    height: 75px;
     background-color: #fff;
     z-index: 1;
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1800px) {
     .page__header {
+        height: auto;
         padding: 2.5% 4.5% 1.5%;
     }
-    
+
     .page__footer {
         padding: 1.5% 6.5% 1% 36.25%;
     }
@@ -37,7 +39,7 @@ body, html {
     .page__header {
         padding: 2.5% 4.5% 1.5%;
     }
-    
+
     .page__footer {
         padding: 1.5% 6.5% 1% 36.25%;
     }
@@ -46,7 +48,10 @@ body, html {
 .menu {
     height: auto;
     overflow: hidden;
-    position: relative;
+    position: absolute;
+    right: 0; left: 0;
+
+    background: rgb(255, 255, 255);
 }
 
 .menu--hidden {
@@ -106,12 +111,12 @@ body, html {
     }
 }
 
-.menu__link:active, 
-.menu__link:focus, 
+.menu__link:active,
+.menu__link:focus,
 .menu__link:hover {
     text-shadow: 1px 1px rgb(234, 168, 147);
     text-shadow: 1px 1px rgba(237, 57, 0, 0.35);
-} 
+}
 
 .menu__item--active .menu__link {
     font-weight: 700;
@@ -120,6 +125,10 @@ body, html {
 }
 
 @media screen and (min-width: 1200px) {
+    .menu {
+      position: relative;
+    }
+
     .menu--hidden {
         height: auto;
     }
@@ -174,7 +183,7 @@ body, html {
         padding: 0;
         text-align: center;
     }
-    
+
     .logo--small .logo__text {
         font-size: 1.75vw;
     }
@@ -230,7 +239,7 @@ body, html {
         justify-content: center;
         padding: 0;
     }
-    
+
     .hero__title {
         font-size: 3rem;
         max-width: 60%;
@@ -435,7 +444,7 @@ body, html {
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
-    
+
 }
 
 .table-skills__item  {
@@ -563,7 +572,7 @@ body, html {
     .two-up__aside {
         height: 50vw;
     }
-    
+
     .two-up__image {
         margin-bottom: -35%;
         width: 66.66%;
@@ -858,7 +867,7 @@ body, html {
         background-image: url("../img/teacher-hero_900.webp");
         height: 50vw;
     }
-    
+
     .photo-teacher__caption {
         font-size: 1.75rem;
     }
@@ -870,7 +879,7 @@ body, html {
         background-image: url("../img/teacher-hero.webp");
         height: 25vw;
     }
-    
+
 }
 
 @media screen and (min-width: 900px) and (max-width: 1200px) {
@@ -910,7 +919,7 @@ body, html {
         display: inline-block;
         width: 66.66%;
     }
-    
+
     .title-block--with-wrapper {
         padding-left: calc(1em + 50px);
         right: 50px;
@@ -923,7 +932,7 @@ body, html {
         padding: 1em 2em;
         width: 66.66%;
     }
-    
+
     .title-block--with-wrapper {
         padding-left: calc(2em + 8.44%);
         right: 8.44%;
@@ -936,7 +945,7 @@ body, html {
         padding: 1em 2em;
         width: 80%;
     }
-    
+
     .title-block--with-wrapper {
         padding-left: calc(2em + 10%);
         right: 10%;
@@ -949,7 +958,7 @@ body, html {
         padding: 1em 2em;
         width: 80%;
     }
-    
+
     .title-block--with-wrapper {
         padding-left: calc(2em + 18.57%);
         right: 18.57%;
@@ -987,7 +996,7 @@ body, html {
     .table-date--full-date > :nth-child(2n + 1) {
         width: 175px;
     }
-    
+
     .table-date--full-date > :nth-child(2n) {
         width: calc(100% - 1.5em - 175px);
     }
@@ -997,15 +1006,15 @@ body, html {
     .table-date > :nth-child(2n + 1) {
         width: 150px;
     }
-    
+
     .table-date > :nth-child(2n) {
         width: calc(100% - 1.5em - 150px);
     }
-    
+
     .table-date--full-date > :nth-child(2n + 1) {
         width: 255px;
     }
-    
+
     .table-date--full-date > :nth-child(2n) {
         width: calc(100% - 1.5em - 255px);
     }
@@ -1049,7 +1058,7 @@ body, html {
         .table-date {
             grid-template-columns: 150px 1fr;
         }
-    
+
         .table-date--full-date {
             grid-template-columns: 225px 1fr;
         }
@@ -1092,7 +1101,7 @@ body, html {
     position: absolute;
     right: 0; bottom: 0; left: 0;
     margin-bottom: 7px;
-} 
+}
 
 
 @supports (display: grid) {
@@ -1106,35 +1115,35 @@ body, html {
         .grid-photos {
             grid-template-columns: repeat(3, 1fr);
         }
-    
+
         .grid-photos__item {
             grid-column: 1 span;
         }
-    
+
         .grid-photos__item--double {
             grid-column: 2 span;
         }
-    
+
         .grid-photos__item--triple {
             grid-column: 3 span;
         }
-    } 
+    }
 
     @media screen and (min-width: 900px) {
         .grid-photos {
             grid-template-columns: repeat(6, 1fr);
         }
-    
+
         .grid-photos__item {
             grid-column: 1 span;
         }
-    
+
         .grid-photos__item--double {
             grid-column: 2 span;
         }
-    
+
         .grid-photos__item--triple {
             grid-column: 2 span;
         }
-    } 
+    }
 }
