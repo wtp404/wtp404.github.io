@@ -1,10 +1,16 @@
-function eventOpenMenu () {
-  menuTrigger.classList.toggle("menu__trigger--close");
-  menuRoot.classList.toggle("menu--hidden");
+function eventOpenMenu (event) {
+  event.currentTarget.classList.toggle("menu__trigger--close");
+  let root = event.currentTarget.parentElement;
+  while (!root.classList.contains("js-menu")) {
+    root = root.parentElement;
+  }
+  root.classList.toggle("menu--hidden");
 }
 
 let menuRoot = document.querySelector(".js-menu");
-menuRoot.classList.add("menu--hidden");
-let menuTrigger = menuRoot.querySelector(".menu__trigger");
+if (menuRoot) {
+  menuRoot.classList.add("menu--hidden");
 
-menuTrigger.addEventListener("click", eventOpenMenu);
+  let menuTrigger = menuRoot.querySelector(".menu__trigger");
+  menuTrigger.addEventListener("click", eventOpenMenu);
+}
