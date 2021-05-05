@@ -1,5 +1,5 @@
 <!-- Через 10 секунд после появления сообщения об отправке или ошибке — отправляемся на сайт Кода :) -->
-<meta http-equiv='refresh' content='10; url=/'>
+<meta http-equiv='refresh' content='10; url=https://wtp404.github.io/contacts.html'>
 <meta charset="UTF-8" />
 <!-- Начался блок PHP -->
 <?php
