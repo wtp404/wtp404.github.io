@@ -37,6 +37,7 @@ body, html {
 
 @media screen and (min-width: 1800px) {
     .page__header {
+        height: auto;
         padding: 2.5% 4.5% 1.5%;
     }
 

@@ -4,9 +4,7 @@ function eventOpenMenu () {
 }
 
 let menuRoot = document.querySelector(".js-menu");
-if (menuRoot) {
-  menuRoot.classList.add("menu--hidden");
-  let menuTrigger = menuRoot.querySelector(".menu__trigger");
+menuRoot.classList.add("menu--hidden");
+let menuTrigger = menuRoot.querySelector(".menu__trigger");
 
-  menuTrigger.addEventListener("click", eventOpenMenu);
-}
+menuTrigger.addEventListener("click", eventOpenMenu);
